@@ -43,7 +43,7 @@ at 2024/10/3 21:21
 + I added the comments as documentation.
 + I refactor the folder and category the folder and file again.
 
-### v2.0.1
+### v2.0.0
 at 2024/10/4 15:33
 #### fixed
 + Under the package `com.example.dietapp.util.components`, I fix the bug of these class about some Android Compose components that I customized. Including
@@ -70,4 +70,31 @@ For more details, compare the code between version `v1.0.1` and `v2.0.0`.
     
 #### deleted
 1. Unused package.
- 
+
+### v2.1.0
+at 2024/10/4 16:39
+
+#### added
+Add the property `selectableDates` in `MyDatePickerDialog` class, the property `selectableDates` determines whether the date can be selected.
+
+In older version,
+
+```
+class MyDatePickerDialog(
+    private val buttonText:String,
+    private val modifier: Modifier = Modifier.height(40.dp).fillMaxWidth(),
+    private val onDateSelected: (String) -> Unit,
+)
+```
+
+While in this version,
+
+```
+class MyDatePickerDialog @OptIn(ExperimentalMaterial3Api::class) constructor(
+    private val buttonText:String,
+    private val modifier: Modifier = Modifier.height(40.dp).fillMaxWidth(),
+    private val onDateSelected: (String) -> Unit,
+    private val selectableDates: SelectableDates? = null
+)
+```
+#``
