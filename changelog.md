@@ -42,3 +42,32 @@ at 2024/10/3 21:21
 #### added
 + I added the comments as documentation.
 + I refactor the folder and category the folder and file again.
+
+### v2.0.1
+at 2024/10/4 15:33
+#### fixed
++ Under the package `com.example.dietapp.util.components`, I fix the bug of these class about some Android Compose components that I customized. Including
+  - AlertDialog
+  - DropdownMenu
+  - DatePicker
+  - TimePicker
+ 
+through change the some property of class from non `MutableState` to `MutableState`.
+
+such as `val checked:Boolean` into `val checked:MutableState<Boolean>`
+
+so that one can access the updated value outside of the class declaration itself (such as on the level of instance of instantiation).
+
+Before this version, one can only access the updated value inside of the class declaration itself. 
+
+If one want to access the update value outside the class declaration, one has to access the property of the class.
+
+For more details, compare the code between version `v1.0.1` and `v2.0.0`.
+
+#### added
++ Wrap these Android Compose components into class.
+  - CheckBox
+    
+#### deleted
+1. Unused package.
+ 
