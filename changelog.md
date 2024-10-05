@@ -99,4 +99,28 @@ class MyDatePickerDialog @OptIn(ExperimentalMaterial3Api::class) constructor(
     private val selectableDates: SelectableDates? = null
 )
 ```
-#``
+
+### v2.2.0
+at 2024/10/5 15:10
+
+#### added
+Wrap a series of components and add its corresponding class.
+
++ progress indicator
+  - `LinearProgressIndicator`
+  - `CircularProgressIndicator`
+
++ button
+  - button with icon
+  - `CheckBox`
+
+
+While for the wrapper class of progress indicator, I provide two modes
+
++ `Determinate`
++ `Indeterminate`
+
+For more details, see [components section in components.md](https://github.com/40843245/DietApp/blob/main/components.md#components)
+
+#### change
+1. extract the pattern of date into `DateFormatterPattern.kt` file, making it more maintenable.
