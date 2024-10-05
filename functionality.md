@@ -1,3 +1,5 @@
+# DietApp
+## functionality
 My package about Android Compose Components and dynamically MySQL statement generator.
 
 Functionalities:
