@@ -18,6 +18,8 @@ Additionally, I think it is flexible to use, maintenable (i.e. easier to modify 
 
 + Under the package `com.example.dietapp.extension.string`, I create some extension function for String type in Kotlin.
 
++ For more functionalities, see [functionality.md](https://github.com/40843245/DietApp/blob/main/functionality.md)
+  
 #### caution
 > [!CAUTION]
 > Be aware when use these generated MySQL statement to query results with driver for database (such as JDBC).
