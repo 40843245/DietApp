@@ -27,4 +27,4 @@ Functionalities:
 > But there is no such functionality to check the syntax of MySQL statement.
 
 > [!CAUTION]
-> Also be aware of SQL injection, for more details, see changelog.md.
+> Also be aware of SQL injection, for more details, see [changelog.md](https://github.com/40843245/DietApp/blob/main/changelog.md).
